@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "MobileMovies",
-    "slug": "MobileMovies",
+    "name": "MoviesFlix",
+    "slug": "MoviesFlix",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
-    "scheme": "movies", // later add path 
+    "scheme": "movies",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.khajaqutbuddin.MobileMovies"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "947d7f0c-444e-480f-a4ab-00e01464f62a"
+      }
     }
   }
 }
