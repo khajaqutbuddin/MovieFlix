@@ -2,7 +2,7 @@ import { Stack } from "expo-router";
 import './globals.css'; 
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ActivityIndicator, View } from "react-native";
+import { ActivityIndicator, StatusBar, View } from "react-native";
 export default function RootLayout() {
   const [initialRoute, setInitialRoute] = useState<string | null>(null)
 
@@ -23,10 +23,16 @@ export default function RootLayout() {
   }
 
   return( 
-  <Stack initialRouteName={initialRoute}>
+    <>
+    <StatusBar hidden={true}/>
+  <Stack initialRouteName={initialRoute}
+  >
+    
     <Stack.Screen name="(tabs)" options={{ headerShown:false}} />
     <Stack.Screen name="login" options={{ headerShown: false }} />
     <Stack.Screen name="register" options={{ headerShown: false }} />
     <Stack.Screen name="movie/[id]" options={{ headerShown:false}} />
-     </Stack>);
+     </Stack>
+     </>
+     );
 }
