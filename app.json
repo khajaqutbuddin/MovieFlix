@@ -16,7 +16,7 @@
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.khajaqutbuddin.MobileMovies"
+      "package": "com.khajaqutbuddin.MoviesFlix"
     },
     "web": {
       "bundler": "metro",
